@@ -3,3 +3,17 @@
 !! What's this?
 Rubiskell allows you to call haskell function from ruby script.
 
+!! Example
+  require 'rubiskell'
+
+  FIB = <<EOD
+  fib :: Int -> Int
+  fib 0 = 0
+  fib 1 = 1
+  fib n = fib (n-2) + fib (n-1)
+  EOD
+
+  fib = Haskell.new(FIB)
+  puts "fib 5 is #{fib.run(5)}." 
+
+you can also write fib[5] instead of fib.run(5).
