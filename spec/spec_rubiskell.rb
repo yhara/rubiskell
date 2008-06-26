@@ -1,6 +1,7 @@
 #
 # spec_rubiskell.rb - Unit test with RSpec
 #
+$LOAD_PATH << File.expand_path("../lib", File.dirname(__FILE__))
 require 'rubiskell'
 
 FIB = <<EOD
@@ -54,7 +55,7 @@ describe "Rubiskell" do
   end
 
   it "should run file" do
-    fib = Haskell.load("fib.hs")
+    fib = Haskell.load(File.expand_path("fib.hs", File.dirname(__FILE__)))
     fib[2].should == 1
   end
 end
