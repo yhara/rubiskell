@@ -1,4 +1,4 @@
-require 'rubiskell.rb'
+require 'rubiskell'
 
 def fib(n)
   Haskell.load("fib.hs").run(n)

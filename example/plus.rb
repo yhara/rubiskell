@@ -1,4 +1,4 @@
-require 'rubiskell.rb'
+require 'rubiskell'
 
 def plus(x, y)
   Haskell.load("plus.hs").run(x, y)
