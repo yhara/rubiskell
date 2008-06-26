@@ -1,4 +1,4 @@
-require 'rubiskell.rb'
+require 'rubiskell'
 
 FIB = <<EOD
 fib :: Int -> Int
@@ -7,9 +7,6 @@ fib 1 = 1
 fib n = fib (n-2) + fib (n-1)
 EOD
 
-def fib(n)
-  fib = Haskell.new(FIB)
-  fib[n]
-end
+fib = Haskell.new(FIB)
 
-puts "fib 5 is #{fib(5)}." 
+puts "fib 5 is #{fib[5]}." 
