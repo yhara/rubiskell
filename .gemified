@@ -1,0 +1,7 @@
+--- 
+:email: yhara.at.kmc.gr.jp
+:author: yhara (Yutaka HARA)
+:name: rubiskell
+:rubyforge_project: rubiskell
+:version: 0.1.0
+:summary: Run haskell snippet from ruby
