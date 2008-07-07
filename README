@@ -17,3 +17,8 @@ Rubiskell allows you to call haskell function from ruby script.
   puts "fib 5 is #{fib.run(5)}." 
 
 you can also write fib[5] instead of fib.run(5).
+
+!! How to run RSpec
+ $ spec spec/spec_rubiskell.rb
+
+Note: This may fail when you are using GNU Screen.
