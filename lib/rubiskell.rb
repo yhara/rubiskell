@@ -108,6 +108,7 @@ class Haskell
       @k += 1
     end
     open(fname, "w"){|f| f.write src }
+    puts src
     at_exit{ File.unlink(fname) }
     fname
   end

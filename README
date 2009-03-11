@@ -3,6 +3,9 @@
 !! What's this?
 Rubiskell allows you to call haskell function from ruby script.
 
+Note: this project is not active any more. 
+Try Unbabel (http://github.com/yhara/unbabel) instead.
+
 !! Example
   require 'rubiskell'
 
